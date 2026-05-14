@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Wellington Selau | Portfolio</title>
 
   <style>
@@ -15,14 +15,14 @@
 
     body {
       font-family: Arial, Helvetica, sans-serif;
-      background: #f7f3ee;
+      background: #f6f4ef;
       color: #1f2933;
       line-height: 1.6;
     }
 
     header {
       min-height: 100vh;
-      background: linear-gradient(135deg, #ffe4ec, #e0f2fe, #fef3c7);
+      background: linear-gradient(135deg, #111827, #2dd4bf, #a78bfa);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -32,11 +32,10 @@
 
     .hero {
       max-width: 850px;
-      background: rgba(255, 255, 255, 0.75);
+      background: rgba(255, 255, 255, 0.88);
       padding: 45px;
       border-radius: 28px;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.18);
     }
 
     .profile-img {
@@ -46,7 +45,7 @@
       object-fit: cover;
       border: 5px solid white;
       margin-bottom: 20px;
-      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      box-shadow: 0 8px 25px rgba(0,0,0,0.20);
     }
 
     h1 {
@@ -57,12 +56,7 @@
 
     .tagline {
       font-size: 1.2rem;
-      color: #4b5563;
-      margin-bottom: 25px;
-    }
-
-    .hero p {
-      font-size: 1rem;
+      color: #374151;
       margin-bottom: 25px;
     }
 
@@ -79,7 +73,8 @@
     }
 
     .btn:hover {
-      background: #ec4899;
+      background: #2dd4bf;
+      color: #111827;
       transform: translateY(-3px);
     }
 
@@ -95,13 +90,13 @@
     nav a {
       color: white;
       text-decoration: none;
-      margin: 0 15px;
+      margin: 0 12px;
       font-weight: bold;
       font-size: 0.95rem;
     }
 
     nav a:hover {
-      color: #f9a8d4;
+      color: #2dd4bf;
     }
 
     section {
@@ -133,13 +128,18 @@
 
     .card h3 {
       margin-bottom: 12px;
-      color: #ec4899;
+      color: #6d28d9;
+    }
+
+    .highlight {
+      color: #0f766e;
+      font-weight: bold;
     }
 
     .skills span {
       display: inline-block;
-      background: #fce7f3;
-      color: #831843;
+      background: #ccfbf1;
+      color: #134e4a;
       padding: 10px 15px;
       border-radius: 20px;
       margin: 6px;
@@ -147,17 +147,16 @@
       font-weight: bold;
     }
 
-    .highlight {
-      color: #ec4899;
-      font-weight: bold;
-    }
-
     .fun-box {
-      background: linear-gradient(135deg, #fce7f3, #dbeafe);
+      background: linear-gradient(135deg, #ccfbf1, #ddd6fe);
       padding: 30px;
       border-radius: 24px;
       text-align: center;
       margin-top: 30px;
+    }
+
+    .work-card {
+      border-left: 6px solid #2dd4bf;
     }
 
     footer {
@@ -169,8 +168,13 @@
     }
 
     footer a {
-      color: #f9a8d4;
+      color: #2dd4bf;
       text-decoration: none;
+      font-weight: bold;
+    }
+
+    a {
+      color: #6d28d9;
       font-weight: bold;
     }
 
@@ -200,14 +204,14 @@
       <h1>Hi, I'm Wellington ✨</h1>
 
       <p class="tagline">
-        Computing student in Ireland | Future Data Analyst | Fashion & Beauty Enthusiast
+        Computing Student in Ireland | Future Data Analyst | Fashion & Beauty Enthusiast
       </p>
 
       <p>
         Welcome to my personal portfolio! I am currently studying 
-        <span class="highlight">BSc (Hons) in Computing</span> in Ireland and building my skills in technology,
-        programming, web design and data. I enjoy learning how digital tools can solve real problems,
-        especially when creativity and technology work together.
+        <span class="highlight">BSc (Hons) in Computing</span> in Ireland. 
+        I am developing my skills in technology, programming, web design and data,
+        while exploring how creativity and digital tools can work together.
       </p>
 
       <a href="#about" class="btn">About Me</a>
@@ -218,6 +222,7 @@
   <nav>
     <a href="#about">About</a>
     <a href="#goals">Goals</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -228,14 +233,13 @@
 
     <div class="card">
       <p>
-        My name is <strong>Wellington Selau</strong>. I am originally from Brazil and now living in Dublin, Ireland.
+        My name is <strong>Wellington Selau</strong>. I am originally from Brazil and currently living in Dublin, Ireland.
         I have always been interested in technology, creativity and how people use digital platforms in everyday life.
       </p>
       <br>
       <p>
-        I currently work in hospitality while studying computing. This has helped me improve my communication,
-        teamwork and problem-solving skills. I like working with people, learning new things and challenging myself
-        to grow personally and professionally.
+        I study computing and work in hospitality, which has helped me build strong communication, teamwork and 
+        problem-solving skills. I enjoy learning new things, working with people and finding creative ways to improve myself.
       </p>
     </div>
   </section>
@@ -246,21 +250,59 @@
     <div class="card">
       <p>
         In the future, I would love to work as a <span class="highlight">Data Analyst</span>, especially in the
-        <span class="highlight">fashion and beauty industry</span>. I am interested in how data can help brands
-        understand trends, customers, sales, social media behaviour and product performance.
+        <span class="highlight">fashion and beauty industry</span>. I am interested in how data can help brands understand
+        trends, customers, sales, social media behaviour and product performance.
       </p>
       <br>
       <p>
-        Fashion and beauty are creative industries, but they also depend a lot on information. My goal is to combine
-        my interest in technology with my passion for style, brands, digital marketing and customer experience.
+        Fashion and beauty are creative industries, but they also rely on smart decisions and information. 
+        My goal is to combine my interest in technology with my passion for style, brands, digital marketing and customer experience.
       </p>
     </div>
 
     <div class="fun-box">
-      <h3>My dream career mix 💻 + 💄 + 📊</h3>
+      <h3>My dream career mix 💻 + 📊 + 🕶️</h3>
       <p>
         Technology, data, fashion, beauty, creativity and business working together.
       </p>
+    </div>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+
+    <div class="grid">
+      <div class="card work-card">
+        <h3>🍸 Hospitality & Bar Work</h3>
+        <p>
+          I currently work in hospitality in Dublin, where I develop customer service, teamwork, organisation and 
+          communication skills in a fast-paced environment.
+        </p>
+      </div>
+
+      <div class="card work-card">
+        <h3>🎮 Token</h3>
+        <p>
+          Working in a fun bar and arcade environment has helped me become more confident with customers, multitasking, 
+          solving problems quickly and working as part of a team.
+        </p>
+      </div>
+
+      <div class="card work-card">
+        <h3>🏨 Hotel Experience</h3>
+        <p>
+          My hotel experience has helped me improve my professionalism, attention to detail, time management and ability 
+          to work with different types of guests.
+        </p>
+      </div>
+
+      <div class="card work-card">
+        <h3>💻 Neogrid Brazil</h3>
+        <p>
+          Before moving to Ireland, I worked in customer service and data quality roles in Brazil. This experience helped me 
+          understand business systems, client support, technology and problem-solving in a professional environment.
+        </p>
+      </div>
     </div>
   </section>
 
@@ -278,6 +320,8 @@
       <span>Web Design</span>
       <span>Customer Service</span>
       <span>Creativity</span>
+      <span>Attention to Detail</span>
+      <span>Time Management</span>
     </div>
   </section>
 
@@ -312,26 +356,29 @@
   </section>
 
   <section id="contact">
-    <h2>Contact</h2>
+    <h2>Contact Me</h2>
 
     <div class="card">
-      <p>
-        You can connect with me on LinkedIn:
-      </p>
-      <br>
-      <p>
+      <p><strong>Name:</strong> Wellington Selau</p>
+      <p><strong>Location:</strong> Dublin, Ireland</p>
+      <p><strong>Email:</strong> wellingtonselau@outlook.com</p>
+      <p><strong>LinkedIn:</strong> 
         <a href="https://www.linkedin.com/in/wellingtonselau" target="_blank">
           www.linkedin.com/in/wellingtonselau
         </a>
+      </p>
+      <br>
+      <p>
+        I am always open to learning opportunities, college projects, networking and future roles related to technology,
+        data analysis, fashion, beauty and digital business.
       </p>
     </div>
   </section>
 
   <footer>
-    <p>Created by Wellington Selau 🌸</p>
+    <p>Created by Wellington Selau</p>
     <p>Computing Student Portfolio</p>
   </footer>
 
 </body>
 </html>
-
